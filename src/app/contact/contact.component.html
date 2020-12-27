@@ -1,3 +1,73 @@
 <app-header></app-header>
-<p>Hi thereeeeee</p>
+
+<div class="contenedor">
+
+  <h1 class="title is-3 has-text-centered">Título</h1>
+
+  <form class="container" [formGroup]="myForm" (ngSubmit)="submit()">
+
+    <div class="field">
+      <label class="label">Nombre</label>
+      <p class="control is-expanded has-icons-left">
+        <input class="input" type="text" placeholder="Nombre" formControlName="name">
+        <span class="icon is-small is-left">
+          <i class="fas fa-user"></i>
+        </span>
+      </p>
+      <p *ngIf="myForm.controls.email.errors && (myForm.controls.name.dirty || myForm.controls.name.touched) "class="help is-danger">
+        <span *ngIf="myForm.hasError('required', 'name')">Nombre requerido *</span>
+      </p>
+    </div>
+
+    <div class="field">
+      <p class="control is-expanded has-icons-left">
+        <input class="input" type="text" placeholder="Apellido" formControlName="surname">
+        <span class="icon is-small is-left">
+          <i class="fas fa-user"></i>
+        </span>
+      </p>
+      <p *ngIf="myForm.controls.email.errors && (myForm.controls.surname.dirty || myForm.controls.surname.touched) "class="help is-danger">
+        <span *ngIf="myForm.hasError('required', 'surname')">Apellido requerido *</span>
+      </p>
+    </div>
+
+    <div class="field">
+      <label class="label">Correo electrónico</label>
+      <p class="control has-icons-left">
+        <input class="input is-info" type="email" placeholder="ejemplo@gmail.com" formControlName="email">
+        <span class="icon is-small is-left">
+          <i class="fas fa-envelope"></i>
+        </span>
+        <span class="icon is-small">
+        </span>
+      </p>
+      <p *ngIf="myForm.controls.email.errors && (myForm.controls.email.dirty || myForm.controls.email.touched)" class="help is-danger">
+        <span *ngIf="myForm.hasError('required', 'email')">Correo electrónico requerido *</span>
+        <span *ngIf="myForm.hasError('email', 'email')">El correo electrónico indicado es inválido *</span>
+      </p>
+    </div>
+
+      <div class="field">
+        <label class="label">Asunto</label>
+        <div class="control">
+          <input class="input" type="text" placeholder="Asunto">
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label">Mensaje</label>
+        <div class="control">
+          <textarea class="textarea" placeholder="Mensaje" formControlName="message"></textarea>
+        </div>
+        <p *ngIf="myForm.controls.email.errors && (myForm.controls.email.dirty || myForm.controls.email.touched) "class="help is-danger">
+          <span *ngIf="myForm.hasError('required', 'message')">Mensaje requerido *</span>
+          <span *ngIf="myForm.hasError('pattern', 'message')">Debe introducir un mínmo de X carácteres *</span>
+        </p>
+      </div>
+
+    <div class= "has-text-centered">
+      <button class="button is-link" (click)="enviar()" [disabled]="!myForm.valid">Enviar mensaje</button>
+    </div>
+  </form>
+</div>
 <app-footer></app-footer>
