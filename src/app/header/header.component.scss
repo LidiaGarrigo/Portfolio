@@ -1,8 +1,11 @@
-nav{
+:host{
+  nav{
+    #inicio{
+      display: flex;
+    }
 
-  #inicio{
-    display: flex;
+
   }
-
 }
+
 
