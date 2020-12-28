@@ -1,1 +1,44 @@
-<p>projects works!</p>
+<app-header></app-header>
+<div class="intro">
+  <section class="hero is-medium is-light">
+    <img src="https://intl-blog.imgix.net/wp-content/uploads/2019/03/cinco-software-de-gesti%C3%B3n-de-proyectos-de-c%C3%B3digo-abierto.jpg?auto=format%2Cenhance">
+    <div class="hero-body has-text-centered">
+      <div class="container">
+        <h1 class="title">
+          Proyectos
+        </h1>
+        <h2 class="subtitle">
+          Breu introducció.
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi veniam animi quas culpa autem a amet nisi at modi porro, eius accusantium aliquam quibusdam, architecto id? Aliquam facilis neque expedita!
+        </h2>
+      </div>
+    </div>
+  </section>
+</div>
+
+<a href="{{project.link}}" *ngFor="let project of projects">
+<div class="card">
+<section
+class="hero is-primary is-bold"
+id="card"
+(onclick)="card()">
+  <div class="hero-body">
+    <div class="proyectos">
+      <figure class="image is-128x128">
+        <img
+          src="{{project.image}}"
+          class="is-rounded">
+      </figure>
+      <div class="descripcion">
+      <h2 class="subtitle">
+        {{project.title}}
+      </h2>
+        <p>{{project.description}}</p>
+      </div>
+    </div>
+  </div>
+</section>
+</div>
+</a>
+<app-footer></app-footer>
+

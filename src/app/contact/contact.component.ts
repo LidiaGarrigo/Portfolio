@@ -9,6 +9,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 export class ContactComponent implements OnInit {
 
   myForm!: FormGroup;
+  isModalActive: boolean = false;
   constructor(private fb: FormBuilder) { }
 
   ngOnInit(): void {
@@ -25,6 +26,9 @@ export class ContactComponent implements OnInit {
   }
   enviar(){
 
+  }
+  toggleModal() {
+    this.isModalActive = !this.isModalActive;
   }
 
 }

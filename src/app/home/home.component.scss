@@ -1,8 +1,5 @@
 .contenedor{
   width: 100%;
-  .imagen{
-
-  }
   .padre{
     .imagen{
     background-size: 100%;
@@ -11,6 +8,9 @@
     margin: 3% 0 3% 0;
     background-attachment: fixed;
     }
+  }
+  .boton{
+  text-align: center;
   }
 }
 
