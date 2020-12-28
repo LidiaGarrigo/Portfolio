@@ -7,14 +7,17 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
   styleUrls: ['./contact.component.scss']
 })
 export class ContactComponent implements OnInit {
-  
+
   myForm!: FormGroup;
   constructor(private fb: FormBuilder) { }
 
   ngOnInit(): void {
     this.myForm = this.fb.group({
+      name: ['', [Validators.required]],
+      surname: ['', [Validators.required]],
       email: ['', [Validators.required, Validators.email]],
-      password: ['', [Validators.required, Validators.pattern('(?=.*[a-z])(?=.*[A-Z]).{7,}')]],
+      subject: ['', [Validators.required, Validators.minLength(3)]],
+      message: ['', [Validators.required, Validators.minLength(10)]],
     });
   }
   submit(){

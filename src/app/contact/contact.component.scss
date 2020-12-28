@@ -1,10 +1,16 @@
-.contenedor{
-  margin: 10% 5%;
-  button:disabled {
-    cursor: not-allowed;
-  }
-  form{
-    margin-bottom: 3%;
+.contenido{
+  border: solid red 1px;
+  .contenedor{
+    margin: 10% 5%;
+    border: solid red 1px;
+    form{
+      margin-bottom: 3%;
+      button:disabled {
+        cursor: not-allowed;
+    }
+    }
+
   }
 }
+
 

@@ -1,73 +1,91 @@
 <app-header></app-header>
+<div class="contenido">
+  <div class="contenedor">
 
-<div class="contenedor">
+    <h1 class="title is-3 has-text-centered">Título</h1>
 
-  <h1 class="title is-3 has-text-centered">Título</h1>
+    <form class="container" [formGroup]="myForm" (ngSubmit)="submit()">
 
-  <form class="container" [formGroup]="myForm" (ngSubmit)="submit()">
+      <div class="field">
+        <label class="label">Nombre</label>
+        <p class="control is-expanded has-icons-left">
+          <input class="input" type="text" placeholder="Nombre" formControlName="name">
+          <span class="icon is-small is-left">
+            <i class="fas fa-user"></i>
+          </span>
+        </p>
+        <p *ngIf="myForm.controls.email.errors && (myForm.controls.name.dirty || myForm.controls.name.touched) "
+          class="help is-danger">
+          <span *ngIf="myForm.hasError('required', 'name')">Nombre requerido *</span>
+        </p>
+      </div>
 
-    <div class="field">
-      <label class="label">Nombre</label>
-      <p class="control is-expanded has-icons-left">
-        <input class="input" type="text" placeholder="Nombre" formControlName="name">
-        <span class="icon is-small is-left">
-          <i class="fas fa-user"></i>
-        </span>
-      </p>
-      <p *ngIf="myForm.controls.email.errors && (myForm.controls.name.dirty || myForm.controls.name.touched) "class="help is-danger">
-        <span *ngIf="myForm.hasError('required', 'name')">Nombre requerido *</span>
-      </p>
-    </div>
+      <div class="field">
+        <p class="control is-expanded has-icons-left">
+          <input class="input" type="text" placeholder="Apellido" formControlName="surname">
+          <span class="icon is-small is-left">
+            <i class="fas fa-user"></i>
+          </span>
+        </p>
+        <p *ngIf="myForm.controls.email.errors && (myForm.controls.surname.dirty || myForm.controls.surname.touched) "
+          class="help is-danger">
+          <span *ngIf="myForm.hasError('required', 'surname')">Apellido requerido *</span>
+        </p>
+      </div>
 
-    <div class="field">
-      <p class="control is-expanded has-icons-left">
-        <input class="input" type="text" placeholder="Apellido" formControlName="surname">
-        <span class="icon is-small is-left">
-          <i class="fas fa-user"></i>
-        </span>
-      </p>
-      <p *ngIf="myForm.controls.email.errors && (myForm.controls.surname.dirty || myForm.controls.surname.touched) "class="help is-danger">
-        <span *ngIf="myForm.hasError('required', 'surname')">Apellido requerido *</span>
-      </p>
-    </div>
-
-    <div class="field">
-      <label class="label">Correo electrónico</label>
-      <p class="control has-icons-left">
-        <input class="input is-info" type="email" placeholder="ejemplo@gmail.com" formControlName="email">
-        <span class="icon is-small is-left">
-          <i class="fas fa-envelope"></i>
-        </span>
-        <span class="icon is-small">
-        </span>
-      </p>
-      <p *ngIf="myForm.controls.email.errors && (myForm.controls.email.dirty || myForm.controls.email.touched)" class="help is-danger">
-        <span *ngIf="myForm.hasError('required', 'email')">Correo electrónico requerido *</span>
-        <span *ngIf="myForm.hasError('email', 'email')">El correo electrónico indicado es inválido *</span>
-      </p>
-    </div>
+      <div class="field">
+        <label class="label">Correo electrónico</label>
+        <p class="control has-icons-left">
+          <input class="input is-info" type="email" placeholder="ejemplo@gmail.com" formControlName="email">
+          <span class="icon is-small is-left">
+            <i class="fas fa-envelope"></i>
+          </span>
+          <span class="icon is-small">
+          </span>
+        </p>
+        <p *ngIf="myForm.controls.email.errors && (myForm.controls.email.dirty || myForm.controls.email.touched)"
+          class="help is-danger">
+          <span *ngIf="myForm.hasError('required', 'email')">Correo electrónico requerido *</span>
+          <span *ngIf="myForm.hasError('email', 'email')">El correo electrónico indicado es inválido *</span>
+        </p>
+      </div>
 
       <div class="field">
         <label class="label">Asunto</label>
         <div class="control">
-          <input class="input" type="text" placeholder="Asunto">
+          <input class="input" type="text" placeholder="Asunto" formControlName="subject">
         </div>
+        <p *ngIf="myForm.controls.subject.errors && (myForm.controls.subject.dirty || myForm.controls.subject.touched) "
+          class="help is-danger">
+          <span *ngIf="myForm.hasError('required', 'subject')">Mensaje requerido *</span>
+          <span *ngIf="myForm.controls['subject'].hasError('minlength')">Debe introducir un mínmo de 3 carácteres
+            *</span>
+        </p>
       </div>
 
       <div class="field">
         <label class="label">Mensaje</label>
         <div class="control">
           <textarea class="textarea" placeholder="Mensaje" formControlName="message"></textarea>
+          <p *ngIf="myForm.controls.message.errors && (myForm.controls.message.dirty || myForm.controls.message.touched) "
+            class="help is-danger">
+            <span *ngIf="myForm.hasError('required', 'message')">Mensaje requerido *</span>
+            <span *ngIf="myForm.controls['message'].hasError('minlength')">Debe introducir un mínmo de 10 carácteres
+              *</span>
+          </p>
         </div>
-        <p *ngIf="myForm.controls.email.errors && (myForm.controls.email.dirty || myForm.controls.email.touched) "class="help is-danger">
-          <span *ngIf="myForm.hasError('required', 'message')">Mensaje requerido *</span>
-          <span *ngIf="myForm.hasError('pattern', 'message')">Debe introducir un mínmo de X carácteres *</span>
-        </p>
       </div>
 
-    <div class= "has-text-centered">
-      <button class="button is-link" (click)="enviar()" [disabled]="!myForm.valid">Enviar mensaje</button>
-    </div>
-  </form>
+      <div class="has-text-centered">
+        <button class="button is-link" (click)="enviar()" [disabled]="!myForm.valid">Enviar mensaje</button>
+      </div>
+    </form>
+  </div>
+
+  <figure class="image is-128x128">
+    <img
+      src="https://media-exp1.licdn.com/dms/image/C4E03AQGvs5LMapP1yA/profile-displayphoto-shrink_400_400/0/1603652037013?e=1614816000&v=beta&t=iVT7pIc-p_EpwsTMt_IkZc89vgTf4rGEwVDs7z3h_fQ"
+      class="is-rounded">
+  </figure>
 </div>
 <app-footer></app-footer>
