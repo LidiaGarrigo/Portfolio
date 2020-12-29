@@ -1,5 +1,5 @@
 .contact{
-  margin-top: 7vh;
+  margin-top: 5.5vh;
 }
 .contenido{
   display: flex;
@@ -8,15 +8,16 @@
   padding: 2vh;
   .contenedor{
     width: 80%;
-    margin: 10% 0;
+    margin: 6vh 0;
     form{
-      padding: 3%;
-      margin-bottom: 3%;
+      padding: 3vh;
       button:disabled {
         cursor: not-allowed;
+      }
+      #boton{
+        margin-top: 3vh;
+      }
     }
-    }
-
   }
 }
 
