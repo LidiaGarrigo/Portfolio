@@ -10,38 +10,41 @@
     background-attachment: fixed;
     }
   }
-.columns{
-  margin-top: 1vh;
-  padding: 2vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  #caja1{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-}
-#skills{
-  text-align: center;
-}
-.progreso{
-  padding: 3vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  .text{
-
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    width: 18vh;
-    p{
-      margin-right: 1vh;
+  .is-ancestor{
+    margin-top: 1vh;
+    padding: 2vh;
+    #marco{
+      width: 170px;
+      margin-left: 1vh;
+      #caja{
+        width: 170px;
+      }
+    }
+    #definition{
+      margin-left: 1vh;
     }
   }
-  .barras{
-    width: 70vh;
+
+  #skills{
+    text-align: center;
   }
-}
+  .progreso{
+    padding: 3vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .text{
+
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      width: 18vh;
+      p{
+        margin-right: 1vh;
+      }
+    }
+    .barras{
+      width: 70vh;
+    }
+  }
 }
