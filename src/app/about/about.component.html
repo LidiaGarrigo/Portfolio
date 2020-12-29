@@ -42,10 +42,10 @@
   </div>
 </div>
 
-<div class="tile is-ancestor">
+<div class="tile is-ancestor" id="skills">
   <div class="tile is-parent">
     <article class="tile is-child notification is-white">
-      <h1 class="title">Skils</h1>
+      <h1 class="title">Skills</h1>
       <p class="subtitle is-5">
         Lenguajes de programación.
       </p>
@@ -53,6 +53,17 @@
   </div>
 </div>
 
+<div class="progreso" *ngFor="let skill of skills">
+  <div class="text">
+    <p>{{skill.name}}:</p>
+  </div>
+  <div class="barras">
+    <progress
+    class="progress is-success"
+    value="{{skill.progress}}"
+    max="100">60%</progress>
+  </div>
+</div>
 
 </div>
 <app-footer></app-footer>

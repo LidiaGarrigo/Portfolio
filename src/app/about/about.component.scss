@@ -1,5 +1,6 @@
 .contenedor{
   margin-top: 7vh;
+  margin-bottom: 2vh;
   .padre{
     .imagen{
     background-size: 100%;
@@ -21,5 +22,26 @@
     align-items: center;
   }
 }
+#skills{
+  text-align: center;
+}
+.progreso{
+  padding: 3vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .text{
 
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 18vh;
+    p{
+      margin-right: 1vh;
+    }
+  }
+  .barras{
+    width: 70vh;
+  }
+}
 }
