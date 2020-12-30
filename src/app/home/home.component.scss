@@ -1,6 +1,30 @@
 .contenedor{
   width: 100%;
   margin-top: 4vh;
+  .container{
+    .caja{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .box {
+        background: rgba(53,53,207,0.835171568627451);
+        width: 100px;
+        height: 100px;
+      }
+      .box:hover {
+        transform: rotate(360deg);
+        background: rgba(0,212,255,1);
+        border-radius: 50%;
+      }
+      .rotate {
+        transition: all 0.5s ease-in-out;
+
+      }
+      .rotate:hover {
+        transition: all 1s ease-in-out;
+      }
+    }
+    }
   .padre{
     .imagen{
     background-size: 100%;

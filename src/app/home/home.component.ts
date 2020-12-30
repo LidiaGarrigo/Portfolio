@@ -7,9 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
+  isModalActive: boolean = false;
+  
   constructor() { }
 
   ngOnInit(): void {
   }
-
+  toggleModal() {
+    this.isModalActive = !this.isModalActive;
+  }
 }

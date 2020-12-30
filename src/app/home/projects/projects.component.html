@@ -1,6 +1,6 @@
 <app-header></app-header>
 <div class="intro">
-  <section class="hero is-medium is-light">
+  <section class="hero is-medium has-background-info-light">
     <img src="../../../assets/projects.jpg">
     <div class="hero-body has-text-centered">
       <div class="container">
@@ -16,12 +16,15 @@
   </section>
 </div>
 
-<a href="{{project.link}}" target="_blank" *ngFor="let project of projects">
+<div class="cartes">
+<a
+href="{{project.link}}"
+target="_blank"
+*ngFor="let project of projects">
 <div class="card">
 <section
 class="hero"
-id="card"
-(onclick)="card()">
+id="card">
   <div class="hero-body">
     <div class="proyectos">
       <figure class="image is-128x128">
@@ -40,5 +43,6 @@ id="card"
 </section>
 </div>
 </a>
+</div>
 <app-footer></app-footer>
 

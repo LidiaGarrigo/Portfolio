@@ -2,23 +2,28 @@
   margin-top: 6vh;
 
 }
+.cartes{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 3vh 0;
+  a{
+  width: 80%;
+.card:hover{
+  opacity: 1;
+  transform: scale(1.1);
+}
 .card{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 3vh 0;
-  padding: 3vh;
-
-  #card:hover{
-    opacity: 1;
-    transform: scale(1.1);
-  }
+  margin: 2vh 0;
+  padding: 2vh;
+  transition: all .5s linear;
+  opacity: 0.6;
   #card{
-    margin-bottom: 2%;
-    transition: all .5s linear;
-    opacity: 0.7;
-    width: 90%;
+    width: 100%;
     background: rgb(2,0,36);
     background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(53,53,207,0.835171568627451) 0%, rgba(0,212,255,1) 100%);
     .proyectos{
@@ -38,6 +43,8 @@
         font-weight: bold;
       }
     }
+    }
+  }
   }
 }
 }

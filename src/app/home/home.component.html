@@ -1,9 +1,8 @@
 <app-header></app-header>
 
 <div class="contenedor">
-
 <div>
-  <section class="hero is-medium is-light">
+  <section class="hero has-background-info-light">
     <img src="../../assets/home.jpg">
     <div class="hero-body has-text-centered">
       <div class="container">
@@ -11,8 +10,21 @@
           Lidia Garrigó
         </h1>
         <h2 class="subtitle">
-          Amante del aprendizaje constante.
+          Amante del aprendizaje constante
         </h2>
+
+        <a (click)="toggleModal()">
+          <div class="caja">
+          <div class="box rotate">
+              <span class="icon is-large has-text-info">
+                <i class="fas fa-info-circle"></i>
+              </span>
+          </div>
+        </div>
+      </a>
+
+
+
       </div>
     </div>
   </section>
@@ -22,7 +34,7 @@
   <div class="tile is-parent">
     <article class="tile is-child notification is-white">
       <figure class="image is-two-thirds">
-        <img src="https://latidosmagazine.com/wp-content/uploads/2020/04/las-pequenas-cosas-camino-.jpg"
+        <img src="../../assets/trayectoria.jpg"
         data-aos="fade-up"
         data-aos-duration="3000">
       </figure>
@@ -86,6 +98,28 @@
   </div>
 </div>
 
+</div>
+
+<div class="modal" [ngClass]="{ 'is-active' : isModalActive }">
+  <div class="modal-background" (click)="toggleModal()"></div>
+  <div class="modal-card">
+    <header class="modal-card-head">
+      <p class="modal-card-title">Información de este proyecto</p>
+      <button class="delete" aria-label="close" (click)="toggleModal()"></button>
+    </header>
+    <section class="modal-card-body">
+      <p>Framework utilizado: Angular (versión 11)</p>
+      <p>Framework CSS: Bulma</p>
+      <p>Animaciones: AOS (Animate On Scroll Library)</p>
+      <p>Hosting: Firebase</p>
+      <p>Sistema de control de versiones: Git</p>
+      <p>Editor de código: Visual Studio Code</p>
+      <p>Metodología: Kanban (con Trello)</p>
+    </section>
+    <footer class="modal-card-foot">
+      <button class="button" (click)="toggleModal()">Close</button>
+    </footer>
+  </div>
 </div>
 
 <app-footer></app-footer>
