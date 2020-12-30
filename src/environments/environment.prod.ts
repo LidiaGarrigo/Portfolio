@@ -1,3 +1,8 @@
+import { environments } from './enviroments.backup';
+
 export const environment = {
-  production: true
+  production: true,
+  environments: {
+
+  }
 };
