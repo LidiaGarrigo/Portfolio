@@ -1,8 +1,4 @@
-import { environments } from './enviroments.backup';
-
+import { Input } from '@angular/core';
 export const environment = {
   production: true,
-  environments: {
-
-  }
 };
