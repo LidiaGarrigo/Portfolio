@@ -24,31 +24,31 @@
         transition: all 1s ease-in-out;
       }
     }
-    }
+  }
   .padre{
     .imagen{
-    background-size: 100%;
-    height: 300px;
-    background-image: url("../../assets/code.jpg");
-    margin: 3% 0 3% 0;
-    background-attachment: fixed;
+      background-size: 100%;
+      height: 300px;
+      background-image: url("../../assets/code.jpg");
+      margin: 3% 0 3% 0;
+      background-attachment: fixed;
     }
   }
   .boton{
-  text-align: center;
-  button{
-    color: white;
-    font-weight: bold;
-    background: rgb(2,0,36);
-    background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(53,53,207,0.835171568627451) 0%, rgba(0,212,255,1) 100%);
-  }
-  button:hover{
-    transform: scale(1.2);
-  }
-  button:active {
-    background-color: rgba(0,212,255,1);
-    box-shadow: 0 5px rgba(158, 158, 207, 0.835);
-    transform: translateY(3px);
+    text-align: center;
+    button{
+      color: white;
+      font-weight: bold;
+      background: rgb(2,0,36);
+      background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(53,53,207,0.835171568627451) 0%, rgba(0,212,255,1) 100%);
+    }
+    button:hover{
+      transform: scale(1.2);
+    }
+    button:active {
+      background-color: rgba(0,212,255,1);
+      box-shadow: 0 5px rgba(158, 158, 207, 0.835);
+      transform: translateY(3px);
     }
   }
   #expectativas{

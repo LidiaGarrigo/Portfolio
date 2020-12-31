@@ -24,6 +24,38 @@ export class AboutComponent implements OnInit {
       name: 'TypeScript',
       progress: 40,
     },
+    {
+      name: 'Bootstrap',
+      progress: 60,
+    },
+    {
+      name: 'JSON & AJAX',
+      progress: 40,
+    },
+    {
+      name: 'Git',
+      progress: 60,
+    },
+    {
+      name: 'Angular JS',
+      progress: 60,
+    },
+    {
+      name: 'Firebase',
+      progress: 40,
+    },
+    {
+      name: 'Java',
+      progress: 30,
+    },
+    {
+      name: 'Wordpress',
+      progress: 30,
+    },
+    {
+      name: 'Php',
+      progress: 30,
+    },
   ];
 
   constructor() {}
