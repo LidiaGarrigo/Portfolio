@@ -4,7 +4,7 @@
   .padre{
     .imagen{
     background-size: 100%;
-    height: 300px;
+    height: 30vh;
     background-image: url("../../assets/code.jpg");
     margin: 3% 0 3% 0;
     background-attachment: fixed;
@@ -28,6 +28,7 @@
   #skills{
     text-align: center;
   }
+
   .progreso{
     padding: 3vh;
     display: flex;
@@ -44,7 +45,8 @@
       }
     }
     .barras{
-      width: 70vh;
+      width: 50%;
     }
   }
 }
+
