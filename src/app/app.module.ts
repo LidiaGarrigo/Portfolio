@@ -1,4 +1,4 @@
-import { FormGroup, ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -12,6 +12,11 @@ import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AngularFirestoreModule } from '@angular/fire/firestore';
+import { AngularFireModule } from '@angular/fire';
+import { environments } from 'src/environments/enviroments.backup';
+
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -27,10 +32,12 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ReactiveFormsModule,
     BrowserAnimationsModule,
-    
-
+    ReactiveFormsModule,
+    FormsModule,
+    AngularFirestoreModule,
+    AngularFireModule.initializeApp(environments.firebaseConfig),
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
