@@ -1,10 +1,16 @@
 :host{
   nav{
     width: 100%;
+    font-size: 18px;
+    img{
+      margin-left: 2vh;
+    }
     #inicio{
       display: flex;
     }
-
+.navbar-menu{
+  padding: 0 1vh;
+}
 
   }
 }

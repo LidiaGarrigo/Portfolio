@@ -16,15 +16,12 @@
         <div class="caja">
             <a (click)="toggleModal()">
           <div class="box rotate">
-              <span class="icon is-large has-text-info">
+              <span class="icon is-large has-text-info" style="font-size: 32px;">
                 <i class="fas fa-info-circle"></i>
               </span>
             </div>
           </a>
         </div>
-
-
-
       </div>
     </div>
   </section>
@@ -45,7 +42,7 @@
       <h1 class="title is-spaced">Trayectoria</h1>
       <p class="subtitle is-5 has-text-justified" style="line-height: 180%">
         Inicié mi trayectoria laboral en el mundo del ocio y tiempo libre, dentro del ámbito de la infancia.
-        <br>Me gradué como trabajadora social en 2015 y, una vez pude ejercer como tal, valoré que no era el trabajo de mis sueños y quise cambiar. Así pues, estos últimos años he vivido un cambio profesional hacia el mundo de los servicios bancarios.<br>A raíz del confinamiento debido a la pandemia, me planteé, entre otras cosas, cambiar de profesión. Así que, en Septiembre  de 2020, inicié este nuevo camino como programadora.<br>Es un mundo totalmente novedoso, el cual estoy disfrutando día a día, aprendiendo y enriqueciendome tanto a nivel profesional como personal.</p>
+        <br>Me gradué como trabajadora social en 2015 y, una vez pude ejercer como tal, valoré que no era el trabajo de mis sueños y quise cambiar. Por lo que, en estos últimos años he vivido un cambio profesional hacia el mundo de los servicios bancarios.<br>A raíz del confinamiento debido a la pandemia, me planteé, entre otras cosas, cambiar de profesión. Así que, en Septiembre  de 2020, inicié este nuevo camino como programadora.<br>Es un mundo totalmente novedoso, el cual estoy disfrutando día a día, aprendiendo y enriqueciendome tanto a nivel profesional como personal.</p>
     </article>
   </div>
 </div>
@@ -95,7 +92,7 @@
     data-aos="fade-left"
     data-aos-duration="2000">
       <h1 class="title is-spaced">Expectativas</h1>
-      <p class="subtitle is-5 has-text-justified" style="line-height: 180%">Me encantaría poder entrar a formar parte de una empresa en la que poder aplicar todos mis conocimientos y, al mismo tiempo, que me permita desarrollarme profesionalmente.</p>
+      <p class="subtitle is-5 has-text-justified" style="line-height: 180%">Me encantaría tener la oportunidad de entrar a formar parte de una empresa en la que poder aplicar todos mis conocimientos y, al mismo tiempo, que me permita desarrollarme profesionalmente.</p>
     </div>
   </div>
 </div>
@@ -110,13 +107,9 @@
       <button class="delete" aria-label="close" (click)="toggleModal()"></button>
     </header>
     <section class="modal-card-body">
-      <p>Framework utilizado: Angular (versión 11)</p>
-      <p>Framework CSS: Bulma</p>
-      <p>Animaciones: AOS (Animate On Scroll Library)</p>
-      <p>Hosting: Firebase</p>
-      <p>Sistema de control de versiones: Git</p>
-      <p>Editor de código: Visual Studio Code</p>
-      <p>Metodología: Kanban (con Trello)</p>
+      <p *ngFor="let detalle of detalles">
+        {{detalle.description}}
+      </p>
     </section>
     <footer class="modal-card-foot">
       <button class="button" (click)="toggleModal()">Close</button>

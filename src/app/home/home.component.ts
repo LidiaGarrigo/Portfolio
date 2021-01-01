@@ -7,9 +7,35 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  isModalActive: boolean = false;
-  
   constructor() { }
+
+  isModalActive: boolean = false;
+  detalles: any = [
+    {
+      description: 'Framework utilizado: Angular (versión 11)',
+    },
+    {
+      description: 'Framework CSS: Bulma',
+    },
+    {
+      description: 'Animaciones: AOS (Animate On Scroll Library)',
+    },
+    {
+      description: 'Hosting: Firebase',
+    },
+    {
+      description: 'Sistema de control de versiones: Git',
+    },
+    {
+      description: 'Editor de código: Visual Studio Code',
+    },
+    {
+      description: 'Metodología: Kanban (con Trello)',
+    },
+    {
+      description: 'Diseño: Responsive',
+    },
+  ];
 
   ngOnInit(): void {
   }
