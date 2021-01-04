@@ -7,13 +7,27 @@
       align-items: center;
       justify-content: center;
       .box {
-        background: rgba(53,53,207,0.835171568627451);
-        width: 100px;
-        height: 100px;
+        background-color: hsl(206, 70%, 96%);
+        box-shadow: none;
+        width: 50px;
+        height: 50px;
+  .icon{
+
+  .fa-info-circle{
+    font-size: 49px;
+    background-color: hsl(206, 70%, 96%);
+    position: absolute;
+    transform: translate(-39%, -39%);
+  }
+  .fa-info-circle:hover{
+    color: rgba(53,53,207,0.835171568627451);
+  }
+}
       }
+
       .box:hover {
         transform: rotate(360deg);
-        background: rgba(0,212,255,1);
+        background: white;
         border-radius: 50%;
       }
       .rotate {
@@ -55,5 +69,8 @@
     margin-bottom: 1vh;
     padding: 2vh;
   }
+}
+.modal{
+  opacity: 0.98;
 }
 
