@@ -1,3 +1,6 @@
+//variables d'estils
+$gradient: rgba(53,53,207,0.835171568627451);
+
 /* You can add global styles to this file, and also import other style files */
 *{
   margin: 0;
@@ -13,12 +16,12 @@
 ::-webkit-scrollbar-thumb {
   height: 50px;
   background: rgb(2,0,36);
-  background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(53,53,207,0.835171568627451) 0%, rgba(0,212,255,1) 100%);
+  background: linear-gradient(0deg, rgba(2,0,36,1) 0%, $gradient 0%, rgba(0,212,255,1) 100%);
   border-radius: 30px;
 }
 ::-webkit-scrollbar-thumb:hover {
   height: 50px;
-  -webkit-box-shadow: inset 1px 1px 1px rgba(53,53,207,0.835171568627451);
-  background-color: rgba(53,53,207,0.835171568627451);
+  -webkit-box-shadow: inset 1px 1px 1px $gradient;
+  background-color: $gradient;
 
 }

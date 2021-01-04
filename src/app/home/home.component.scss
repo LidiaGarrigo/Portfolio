@@ -1,3 +1,7 @@
+//variables d'estils
+$light-blue: hsl(206, 70%, 96%);
+$gradient: rgba(53,53,207,0.835171568627451);
+
 .contenedor{
   width: 100%;
   margin-top: 5vh;
@@ -7,24 +11,20 @@
       align-items: center;
       justify-content: center;
       .box {
-        background-color: hsl(206, 70%, 96%);
+        background-color: $light-blue;
         box-shadow: none;
         width: 50px;
         height: 50px;
-  .icon{
-
-  .fa-info-circle{
-    font-size: 49px;
-    background-color: hsl(206, 70%, 96%);
-    position: absolute;
-    transform: translate(-39%, -39%);
-  }
-  .fa-info-circle:hover{
-    color: rgba(53,53,207,0.835171568627451);
-  }
-}
+        .fa-info-circle{
+          font-size: 49px;
+          background-color: $light-blue;
+          position: absolute;
+          transform: translate(-39%, -39%);
+        }
+        .fa-info-circle:hover{
+          color: $gradient;
+        }
       }
-
       .box:hover {
         transform: rotate(360deg);
         background: white;
@@ -32,7 +32,6 @@
       }
       .rotate {
         transition: all 0.5s ease-in-out;
-
       }
       .rotate:hover {
         transition: all 1s ease-in-out;
@@ -54,7 +53,7 @@
       color: white;
       font-weight: bold;
       background: rgb(2,0,36);
-      background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(53,53,207,0.835171568627451) 0%, rgba(0,212,255,1) 100%);
+      background: linear-gradient(0deg, rgba(2,0,36,1) 0%, $gradient 0%, rgba(0,212,255,1) 100%);
     }
     button:hover{
       transform: scale(1.2);
@@ -70,7 +69,5 @@
     padding: 2vh;
   }
 }
-.modal{
-  opacity: 0.98;
-}
+
 
