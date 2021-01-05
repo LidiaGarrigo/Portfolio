@@ -1,3 +1,14 @@
+@media screen and (max-width: 1100px) {
+        figure{
+          width: 1vh;
+          img{
+            display: none;
+          }
+        }
+
+
+
+}
 .intro{
   margin-top: 5vh;
 }
@@ -29,11 +40,13 @@
       display: flex;
       color: white;
       figure{
-      width: 15vh;
       display: flex;
       flex-direction: column;
       justify-content: center;
       height: auto;
+      img{
+        width: 150px;
+      }
     }
     .descripcion{
       width: 100%;
