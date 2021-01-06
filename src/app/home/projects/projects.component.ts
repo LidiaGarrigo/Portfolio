@@ -12,7 +12,7 @@ export class ProjectsComponent implements OnInit {
     {
       title: 'Dimension Time',
       description: 'Se trata de una aplicación web en la que el usuario solo tiene acceso si inicia sesión, o en su defecto si se registra. Una vez introducidos los datos correctos, el usuario puede acceder a su lista de tareas, accediendo al detalle de una de estas es informado del día en el que se encuentra y puede iniciar el contador apareciendo otros botones. Al apretar al botón "Finalizar" se muestra el tiempo total invertido por tarea. (Simulación)',
-      image: '../../../assets/avatar-user.jpg',
+      image: '../../../assets/avatar-user.png',
       link: 'https://dimension-time-73987.web.app',
       id: 1,
     },
