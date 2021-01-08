@@ -1,16 +1,25 @@
 @media screen and (max-width: 1100px) {
+.proyectos{
         figure{
-          width: 1vh;
+          width: none;
+          padding-right: 0vh;
           img{
             display: none;
           }
         }
-
-
-
+  }
 }
+@media screen and (min-width: 1100px) {
+  .proyectos{
+    figure{
+      padding-right: 2vh;
+    }
+}
+}
+////////////////// end media queries //////////////////
+
 .intro{
-  margin-top: 5vh;
+  margin-top: 3em;
 }
 .cartes{
   display: flex;
@@ -50,7 +59,6 @@
     }
     .descripcion{
       width: 100%;
-      padding-left: 2vh;
       .subtitle{
         color: white;
         font-weight: bold;
