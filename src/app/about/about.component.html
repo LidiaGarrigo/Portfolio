@@ -1,72 +1,67 @@
 <app-header></app-header>
 <div class="contenedor">
-<div>
-  <section class="hero has-background-info-light">
-    <img src="https://images.squarespace-cdn.com/content/v1/55268597e4b096c58441c5ef/1590177336859-S8KK1647E7OZCJ78BOOR/ke17ZwdGBToddI8pDm48kCrpjmJlxu0NxsJ9GKCsnogUqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYy7Mythp_T-mtop-vrsUOmeInPi9iDjx9w8K4ZfjXt2dvDz6UmabSFEtDtv0kbLAw_asFw0V2wLxb_27zQ5g7o_W07ycm2Trb21kYhaLJjddA/About+me?format=1500w">
-    <div class="hero-body has-text-centered">
-      <div class="container">
-        <h1 class="title is-2 is-spaced">
-          Sobre mí
-        </h1>
-        <h2 class="subtitle is-4">
-          Se hace camino al andar
-        </h2>
+  <div>
+    <section class="hero has-background-info-light">
+      <img
+        src="https://images.squarespace-cdn.com/content/v1/55268597e4b096c58441c5ef/1590177336859-S8KK1647E7OZCJ78BOOR/ke17ZwdGBToddI8pDm48kCrpjmJlxu0NxsJ9GKCsnogUqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYy7Mythp_T-mtop-vrsUOmeInPi9iDjx9w8K4ZfjXt2dvDz6UmabSFEtDtv0kbLAw_asFw0V2wLxb_27zQ5g7o_W07ycm2Trb21kYhaLJjddA/About+me?format=1500w">
+      <div class="hero-body has-text-centered">
+        <div class="container">
+          <h1 class="title is-2 is-spaced">
+            Sobre mí
+          </h1>
+          <h2 class="subtitle is-4">
+            Se hace camino al andar
+          </h2>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <div class="aboutme">
+    <div class="tile is-4 is-parent" id="marco">
+      <div class="tile is-child box" id="caja" data-aos="fade-right" data-aos-duration="2000">
+        <figure class="image is-128x128">
+          <img
+            src="https://media-exp1.licdn.com/dms/image/C4E03AQGvs5LMapP1yA/profile-displayphoto-shrink_400_400/0/1603652037013?e=1614816000&v=beta&t=iVT7pIc-p_EpwsTMt_IkZc89vgTf4rGEwVDs7z3h_fQ">
+        </figure>
       </div>
     </div>
-  </section>
-</div>
-
-<div class="tile is-ancestor">
-  <div class="tile is-4 is-parent" id="marco">
-    <div class="tile is-child box"
-    id="caja"
-    data-aos="fade-right"
-    data-aos-duration="2000">
-      <figure class="image is-128x128">
-        <img src="https://media-exp1.licdn.com/dms/image/C4E03AQGvs5LMapP1yA/profile-displayphoto-shrink_400_400/0/1603652037013?e=1614816000&v=beta&t=iVT7pIc-p_EpwsTMt_IkZc89vgTf4rGEwVDs7z3h_fQ">
-      </figure>
+    <div class="tile is-parent" id="definition">
+      <div class="tile is-child box" data-aos="fade-left" data-aos-duration="2000">
+        <h1 class="title is-spaced">¿Qué podría destacar de mí?</h1>
+        <p class="subtitle is-5 has-text-justified" style="line-height: 180%">
+          Soy una persona organizada, motivada y con gran capacidad de adaptación. Muestro un gran aprendizaje al vuelo
+          y proactividad.<br>Me gusta dar siempre lo mejor de mí e hilar fino en los proyectos siendo muy detallista.
+        </p>
+      </div>
     </div>
   </div>
-  <div class="tile is-parent" id="definition">
-    <div class="tile is-child box"
-    data-aos="fade-left"
-    data-aos-duration="2000">
-      <h1 class="title is-spaced">¿Qué podría destacar de mí?</h1>
-      <p class="subtitle is-5 has-text-justified" style="line-height: 180%">
-        Soy una persona organizada, motivada y con gran capacidad de adaptación. Muestro un gran aprendizaje al vuelo y proactividad.<br>Me gusta dar siempre lo mejor de mí e hilar fino en los proyectos siendo muy detallista.
-      </p>
+
+  <div class="mother">
+    <div class="imagen is-fixed">
     </div>
   </div>
-</div>
 
-<div class="mother">
-  <div class="imagen is-fixed">
+  <div id="skills">
+    <div class="tile is-parent">
+      <article class="tile is-child notification is-white">
+        <h1 class="title is-spaced">Skills</h1>
+        <p class="subtitle is-5 is-centred">
+          Lenguajes de programación
+        </p>
+        <progress class="progress is-small is-info" max="100">15%</progress>
+      </article>
+    </div>
   </div>
-</div>
 
-<div class="tile is-ancestor" id="skills">
-  <div class="tile is-parent">
-    <article class="tile is-child notification is-white">
-      <h1 class="title is-spaced">Skills</h1>
-      <p class="subtitle is-5 is-centred" style="line-height: 180%">
-        Lenguajes de programación
-      </p>
-      <progress class="progress is-small is-info" max="100">15%</progress>
-    </article>
+  <div class="progreso" *ngFor="let skill of skills">
+    <div class="text">
+      <p>{{skill.name}}:</p>
+    </div>
+    <div class="barras">
+      <progress class="progress is-success" value="{{skill.progress}}" max="100">60%</progress>
+    </div>
   </div>
-</div>
-
-<div class="progreso" *ngFor="let skill of skills">
-  <div class="text">
-    <p>{{skill.name}}:</p>
-  </div>
-  <div class="barras">
-    <progress
-    class="progress is-success"
-    value="{{skill.progress}}"
-    max="100">60%</progress>
-  </div>
-</div>
 </div>
 
 <app-footer></app-footer>

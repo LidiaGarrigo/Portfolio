@@ -1,109 +1,111 @@
 <app-header></app-header>
 
 <div class="contenedor">
-<div>
-  <section class="hero has-background-info-light">
-    <div class="hero-image">
-      <img src="../../assets/home.jpg">
-      <div class="hero-text">
-        <h1 class="title is-2 is-spaced">Lidia Garrigó</h1>
-        <p>Junior Front-End Developer</p>
-      </div>
-    </div>
-    <div class="hero-body has-text-centered">
-      <div class="container">
-        <h1 class="title is-2 is-spaced">
-          Lidia Garrigó
-        </h1>
-        <div class="definition">
-          <h2 class="subtitle is-4">
-            Amante del aprendizaje constante
-          </h2>
+  <div>
+    <section class="hero has-background-info-light">
+      <div class="hero-image">
+        <img src="../../assets/home.jpg">
+        <div class="hero-text">
+          <h1 class="title is-2 is-spaced">Lidia Garrigó</h1>
+          <p>Junior Front-End Developer</p>
         </div>
+      </div>
+      <div class="hero-body has-text-centered">
+        <div class="container">
+          <h1 class="title is-2 is-spaced">
+            Lidia Garrigó
+          </h1>
+          <div class="definition">
+            <h2 class="subtitle is-4">
+              Amante del aprendizaje constante
+            </h2>
+          </div>
 
 
-        <div class="caja">
+          <div class="caja">
             <a (click)="toggleModal()">
-          <div class="box rotate">
-              <span class="icon is-large has-text-info">
-                <i class="fas fa-info-circle"></i>
-              </span>
-            </div>
-          </a>
+              <div class="box rotate">
+                <span class="icon is-large has-text-info">
+                  <i class="fas fa-info-circle"></i>
+                </span>
+              </div>
+            </a>
+          </div>
         </div>
       </div>
+    </section>
+  </div>
+
+  <div class="trayectoria">
+    <div class="tile is-parent">
+      <article class="tile is-child notification is-white">
+        <figure class="image is-two-thirds">
+          <img src="../../assets/trayectoria.jpg" data-aos="fade-up" data-aos-duration="3000">
+        </figure>
+      </article>
     </div>
-  </section>
-</div>
-
-<div class="trayectoria">
-  <div class="tile is-parent">
-    <article class="tile is-child notification is-white">
-      <figure class="image is-two-thirds">
-        <img src="../../assets/trayectoria.jpg"
-        data-aos="fade-up"
-        data-aos-duration="3000">
-      </figure>
-    </article>
-  </div>
-  <div class="tile is-parent">
-    <article class="tile is-child notification is-white">
-      <h1 class="title is-spaced">Trayectoria</h1>
-      <p class="subtitle is-5 has-text-justified" style="line-height: 180%">
-        Inicié mi trayectoria laboral en el mundo del ocio y tiempo libre, dentro del ámbito de la infancia.
-        <br>Me gradué como trabajadora social en 2015 y, una vez pude ejercer como tal, valoré que no era el trabajo de mis sueños y quise cambiar. Por lo que, en estos últimos años he vivido un cambio profesional hacia el mundo de los servicios bancarios.<br>A raíz del confinamiento debido a la pandemia, me planteé, entre otras cosas, cambiar de profesión. Así que, en Septiembre  de 2020, inicié este nuevo camino como programadora.<br>Es un mundo totalmente novedoso, el cual estoy disfrutando día a día, aprendiendo y enriqueciendome tanto a nivel profesional como personal.</p>
-    </article>
-  </div>
-</div>
-<div class="mother">
-  <div class="imagen">
-  </div>
-</div>
-
-<div class="proyectos">
-  <div class="tile is-parent">
-    <article class="tile is-child notification is-white">
-      <h1 class="title is-spaced">Proyectos</h1>
-      <p class="subtitle is-5 has-text-justified" style="line-height: 180%">En el Bootcamp de programación del programa Singulars de la Generalitat de Catalunya llevado por PIMEC y realizado en Bit Computer Training by netmind (Barcelona), he llevado a cabo diversos proyectos. En este apartado, muestro los más destacados.
-      </p>
-      <p class="boton">
-        <button class="button is-rounded" [routerLink]="['/home/projects']">Ver más</button>
-      </p>
-    </article>
-  </div>
-  <div class="tile is-parent"
-    data-aos="flip-left"
-    data-aos-easing="ease-out-cubic"
-    data-aos-duration="2000">
-    <article class="tile is-child notification is-white">
-      <figure class="image is-two-thirds">
-        <img src="https://intl-blog.imgix.net/wp-content/uploads/2019/03/cinco-software-de-gesti%C3%B3n-de-proyectos-de-c%C3%B3digo-abierto.jpg?auto=format%2Cenhance"
-        data-aos="flip-left">
-      </figure>
-    </article>
-  </div>
-</div>
-
-<div id="expectativas">
-  <div class="tile is-4 is-vertical is-parent"
-  data-aos="fade-right"
-  data-aos-duration="2000">
-    <div class="tile is-child box">
-      <figure class="image">
-        <img
-        src="https://www.mediasource.mx/hubfs/imagenes-blog/Los-objetivos-y-las-expectativas-del-cliente.png"
-        >
-      </figure>
+    <div class="tile is-parent">
+      <article class="tile is-child notification is-white">
+        <h1 class="title is-spaced">Trayectoria</h1>
+        <p class="subtitle is-5 has-text-justified" style="line-height: 180%">
+          Inicié mi trayectoria laboral en el mundo del ocio y tiempo libre, dentro del ámbito de la infancia.
+          <br>Me gradué como trabajadora social en 2015 y, una vez pude ejercer como tal, valoré que no era el trabajo
+          de mis sueños y quise cambiar. Por lo que, en estos últimos años he vivido un cambio profesional hacia el
+          mundo de los servicios bancarios.<br>A raíz del confinamiento debido a la pandemia, me planteé, entre otras
+          cosas, cambiar de profesión. Así que, en Septiembre de 2020, inicié este nuevo camino como programadora.<br>Es
+          un mundo totalmente novedoso, el cual estoy disfrutando día a día, aprendiendo y enriqueciendome tanto a nivel
+          profesional como personal.
+        </p>
+      </article>
     </div>
   </div>
-  <div class="tile is-parent">
-    <div class="tile is-child box">
-      <h1 class="title is-spaced">Expectativas</h1>
-      <p class="subtitle is-5 has-text-justified" style="line-height: 180%">Me encantaría tener la oportunidad de entrar a formar parte de una empresa en la que poder aplicar todos mis conocimientos y, al mismo tiempo, que me permita desarrollarme profesionalmente.</p>
+  <div class="mother">
+    <div class="imagen">
     </div>
   </div>
-</div>
 
+  <div class="proyectos">
+    <div class="tile is-parent">
+      <article class="tile is-child notification is-white">
+        <h1 class="title is-spaced">Proyectos</h1>
+        <p class="subtitle is-5 has-text-justified" style="line-height: 180%">En el Bootcamp de programación del
+          programa Singulars de la Generalitat de Catalunya llevado por PIMEC y realizado en Bit Computer Training by
+          netmind (Barcelona), he llevado a cabo diversos proyectos. En este apartado, muestro los más destacados.
+        </p>
+        <p class="boton">
+          <button class="button is-rounded" [routerLink]="['/home/projects']">Ver más</button>
+        </p>
+      </article>
+    </div>
+    <div class="tile is-parent" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+      <article class="tile is-child notification is-white">
+        <figure class="image is-two-thirds">
+          <img
+            src="https://intl-blog.imgix.net/wp-content/uploads/2019/03/cinco-software-de-gesti%C3%B3n-de-proyectos-de-c%C3%B3digo-abierto.jpg?auto=format%2Cenhance"
+            data-aos="flip-left">
+        </figure>
+      </article>
+    </div>
+  </div>
+
+  <div id="expectativas">
+    <div class="tile is-4 is-vertical is-parent" data-aos="fade-right" data-aos-duration="2000">
+      <div class="tile is-child box">
+        <figure class="image">
+          <img src="https://www.mediasource.mx/hubfs/imagenes-blog/Los-objetivos-y-las-expectativas-del-cliente.png">
+        </figure>
+      </div>
+    </div>
+    <div class="tile is-parent">
+      <div class="tile is-child box">
+        <h1 class="title is-spaced">Expectativas</h1>
+        <p class="subtitle is-5 has-text-justified" style="line-height: 180%">Me encantaría tener la oportunidad de
+          entrar a formar parte de una empresa en la que poder aplicar todos mis conocimientos y, al mismo tiempo, que
+          me permita desarrollarme profesionalmente.</p>
+      </div>
+    </div>
+  </div>
+  
 </div>
 
 <div class="modal" [ngClass]="{ 'is-active' : isModalActive }">

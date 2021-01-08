@@ -56,6 +56,18 @@ export class AboutComponent implements OnInit {
       name: 'Php',
       progress: 30,
     },
+    {
+      name: 'Ionic',
+      progress: 30,
+    },
+    {
+      name: 'Android Studio',
+      progress: 30,
+    },
+    {
+      name: 'Xcode',
+      progress: 30,
+    },
   ];
 
   constructor() {}

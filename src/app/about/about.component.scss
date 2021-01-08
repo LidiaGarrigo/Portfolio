@@ -1,16 +1,37 @@
+@media screen and (max-width: 1100px) {
+.mother{
+  .imagen{
+    background-size: 100%;
+    height: 150px;
+    background-image: url("../../assets/code.jpg");
+    margin: 3% 0 3% 0;
+    background-attachment: none;
+  }
+}
+}
+@media screen and (min-width: 1100px) {
+
+  .aboutme{
+    display: flex;
+  }
+  .mother{
+    .imagen{
+      background-size: 100%;
+      height: 250px;
+      background-image: url("../../assets/code.jpg");
+      margin: 3% 0 3% 0;
+      background-attachment: fixed;
+    }
+}
+}
+
+////////////////// end media queries //////////////////
+
 .contenedor{
   margin-top: 7vh;
   margin-bottom: 2vh;
-  .mother{
-    .imagen{
-    background-size: 100%;
-    height: 30vh;
-    background-image: url("../../assets/code.jpg");
-    margin: 3% 0 3% 0;
-    background-attachment: fixed;
-    }
-  }
-  .is-ancestor{
+
+  .aboutme{
     margin-top: 1vh;
     padding: 2vh;
     #marco{
@@ -27,6 +48,9 @@
 
   #skills{
     text-align: center;
+    p{
+      line-height: 180%
+    }
   }
 
   .progreso{
@@ -35,7 +59,6 @@
     align-items: center;
     justify-content: center;
     .text{
-
       display: flex;
       align-items: center;
       justify-content: flex-end;

@@ -69,6 +69,8 @@ $gradient: rgba(53,53,207,0.835171568627451);
 }
 }
 
+////////////////// end media queries //////////////////
+
 .contenedor{
   width: 100%;
   margin-top: 3em;
@@ -148,15 +150,6 @@ $gradient: rgba(53,53,207,0.835171568627451);
       }
     }
   }
-/*   .mother{
-    .imagen{
-      background-size: 100%; */
- /*      height: 250px; */
-     /*  background-image: url("../../assets/code.jpg");
-      margin: 3% 0 3% 0;
-      background-attachment: none;
-    }
-  } */
   .boton{
     text-align: center;
     button{
