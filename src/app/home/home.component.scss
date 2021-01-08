@@ -26,6 +26,15 @@ $gradient: rgba(53,53,207,0.835171568627451);
     blink-caret .5s step-end infinite;
   }
 }
+.mother{
+  .imagen{
+    background-size: 100%;
+    height: 150px;
+    background-image: url("../../assets/code.jpg");
+    margin: 3% 0 3% 0;
+    background-attachment: none;
+  }
+}
 }
   @keyframes #{typing} {
     from { width: 0 }
@@ -49,6 +58,15 @@ $gradient: rgba(53,53,207,0.835171568627451);
   #expectativas{
     display: flex;
   }
+  .mother{
+    .imagen{
+      background-size: 100%;
+      height: 250px;
+      background-image: url("../../assets/code.jpg");
+      margin: 3% 0 3% 0;
+      background-attachment: fixed;
+    }
+}
 }
 
 .contenedor{
@@ -74,10 +92,10 @@ $gradient: rgba(53,53,207,0.835171568627451);
     color: white;
     h1{
       color: white;
-      font-size: 50px;
+      font-size: 40px;
     }
     p{
-      font-size: 25px;
+      font-size: 20px;
       overflow: hidden;
       border-right: .15em solid orange;
       white-space: nowrap;
@@ -130,15 +148,15 @@ $gradient: rgba(53,53,207,0.835171568627451);
       }
     }
   }
-  .mother{
+/*   .mother{
     .imagen{
-      background-size: 100%;
-      height: 150px;
-      background-image: url("../../assets/code.jpg");
+      background-size: 100%; */
+ /*      height: 250px; */
+     /*  background-image: url("../../assets/code.jpg");
       margin: 3% 0 3% 0;
-      background-attachment: fixed;
+      background-attachment: none;
     }
-  }
+  } */
   .boton{
     text-align: center;
     button{
