@@ -11,7 +11,7 @@ export class ContactComponent implements OnInit {
 
   myForm!: FormGroup;
   isModalActive: boolean = false;
-  
+
   constructor(private fb: FormBuilder, private dbData: DataService) {
     this.myForm = this.createFrom();
   }
